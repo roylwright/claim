@@ -1,0 +1,27 @@
+package w1a6_WhiteOut;
+
+import java.util.Scanner;
+
+public class WhiteOut {
+	public class VowelMovements {
+
+		public static void main(String[] args) {
+			Scanner scanner = new Scanner(System.in);
+			System.out.print("Enter a string: ");
+			String userWord = scanner.nextLine();
+			scanner.close();
+			whiteOut(userWord);
+		}
+
+		private static void whiteOut(String userWord) {
+			char[] word = userWord.toCharArray();
+			String newWord = "";
+			for (int i = 0; i < userWord.length(); i++) {
+				if (word[i] != ' ') {
+					newWord = newWord + userWord.charAt(i);  //(userWord.length()-i);
+				}	
+			}
+			System.out.println(newWord);
+		}
+	}
+	}

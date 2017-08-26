@@ -1,0 +1,25 @@
+package w1a1_IsPerfect;
+
+public class IsPerfect {
+
+	public static void main(String[] args) {
+		isPerfect(496);
+
+	}
+
+	private static void isPerfect(int x) {
+		int y = 0;
+		for (int i = 1; i < x; i++) {
+			if(x % i == 0) {
+				y = y + i;
+			}
+		}
+			if (x == y) {
+				System.out.print(x + " is a perfect number");
+			} else {
+				System.out.print(x + " is a not perfect number");
+			}
+
+	}
+
+}

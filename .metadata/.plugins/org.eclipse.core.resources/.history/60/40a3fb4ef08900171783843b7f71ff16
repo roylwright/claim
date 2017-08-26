@@ -1,0 +1,23 @@
+package w1a4_PalinCheck;
+
+import java.util.Scanner;
+
+public class PalinCheck {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("Enter a string: ");
+		String userWord = scanner.next();
+		scanner.close();
+		palinCheck(userWord);
+	}
+
+	private static void palinCheck(String userWord) {
+		String newWord = "";
+		for (int i = 0; i < userWord.length(); i++) {
+			newWord = newWord + userWord.charAt(userWord.length()-1-i);  //(userWord.length()-i);
+		}
+		System.out.println(newWord);
+	}
+
+}

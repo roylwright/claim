@@ -1,0 +1,13 @@
+package w1gp1_Change;
+
+import java.util.Scanner;
+
+public class Change {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("");
+		Scanner.close();
+	}
+
+}

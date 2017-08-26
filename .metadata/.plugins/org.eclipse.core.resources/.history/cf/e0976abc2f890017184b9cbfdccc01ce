@@ -1,0 +1,13 @@
+package w1aWTF_loopy;
+
+public class Loopy {
+
+	public static void main(String[] args) {
+		int j = 0;
+		for(int i=0; i<10; i++) {
+			j=j+i;
+		}
+		System.out.print(j);
+	}
+
+}

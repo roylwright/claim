@@ -1,0 +1,19 @@
+package w1gp1_Change;
+
+import java.util.Scanner;
+
+public class Change {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("Enter a value between 0 and 100: ");
+		int userInput = scanner.nextInt();
+		//Scanner.close();
+		System.out.println("Quarters: " + (userInput/25));
+		userInput = (userInput % 25);
+		System.out.println("Dimes: " + (userInput/10));
+		userInput = (userInput % 10);
+		System.out.println(userInput);
+	}
+
+}

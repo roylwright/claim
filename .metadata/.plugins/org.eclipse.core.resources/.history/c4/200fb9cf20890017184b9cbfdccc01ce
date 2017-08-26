@@ -1,0 +1,10 @@
+package w1a3_OddEven;
+
+public class oddEven {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

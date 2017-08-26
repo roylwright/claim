@@ -1,0 +1,26 @@
+package w1a1_Median3;
+
+public class Median3 {
+
+	public static void main(String[] args) {
+		Med3(3,1,78);
+		}
+		public static void Med3(int med1, int med2, int med3) {
+			int med = med1;
+			if ((med1 < med2) == true && (med2 < med3) == true){
+				med = med2;
+			} 
+			if ((med1 > med2) == true && (med2 > med3) == true){
+				med = med2;
+			}
+			
+			if ((med1 < med3) == true && (med3 < med2) == true){
+				med = med3;
+			} 
+			if ((med1 > med3) == true && (med3 > med2) == true){
+				med = med3;
+			}
+			System.out.print("The middle number of the three entered is: " + med);
+		}
+
+}

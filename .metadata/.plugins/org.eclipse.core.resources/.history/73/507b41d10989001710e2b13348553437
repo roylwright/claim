@@ -1,0 +1,21 @@
+package w1a1_JustStuff3;
+
+public class Lottery {
+
+	public static void main(String[] args) {
+		int win = greenTicket(1,2,3);
+		System.out.println("Your score is: " + win);
+	}
+	public static int greenTicket(int one, int two, int three) {
+		if ((one == two) && (one == three)) {
+			return 20;
+		} else if ((one == two) || (one == three) || (two == three)){
+			return 10;
+		} else {
+			return 0;
+			}
+		}
+			
+	}
+
+}

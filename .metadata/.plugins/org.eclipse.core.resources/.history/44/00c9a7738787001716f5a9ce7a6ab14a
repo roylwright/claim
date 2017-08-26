@@ -1,0 +1,19 @@
+package w1p2_Method_Call;
+
+public class MethodCall {
+
+	public static void main(String[] args) {
+		String words = "This is being passed to a method before printing";
+		ThisMethod();
+		ThisMethod(words);
+		
+	}
+	 private static void ThisMethod() {
+		 System.out.println("This is being printed from inside a method"); 
+	}
+	 private static void ThisMethod(String word) {
+		 String words;
+		 System.out.println(words); 
+	}
+
+}

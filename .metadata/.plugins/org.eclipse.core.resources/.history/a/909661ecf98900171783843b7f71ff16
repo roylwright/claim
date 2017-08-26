@@ -1,0 +1,27 @@
+package w1a6_Fonzy;
+
+import java.util.Scanner;
+
+public class Fonzy {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("Enter a string: ");
+		String userWord = scanner.next();
+		scanner.close();
+		char[] word = userWord.toCharArray();
+		int number = fonzy(word);
+		System.out.print(userWord + " has " + number + ", a's");
+	}
+
+	private static int fonzy(char[] word) {
+		int count = 0;
+		for (int i = 0; i < word.length; i++){
+			if(word[i]=='a') {
+				count++;
+			}
+		}
+		return count;
+	}
+
+}

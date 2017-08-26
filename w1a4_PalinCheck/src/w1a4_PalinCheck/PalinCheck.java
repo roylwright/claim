@@ -1,0 +1,30 @@
+package w1a4_PalinCheck;
+
+import java.util.Scanner;
+
+public class PalinCheck {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("Enter a string: ");
+		String userWord = scanner.next();
+		scanner.close();
+		palinCheck(userWord);
+	}
+
+	private static void palinCheck(String userWord) {
+		char a;
+		char b;
+		String condition = " is ";
+		for (int i = 0; i < (userWord.length()/2); i++) {
+			a = userWord.charAt(i);  
+			b = userWord.charAt(userWord.length()-1-i);
+			if (a != b) {
+				condition = " is not ";
+			}
+			
+		}
+		System.out.print(userWord + condition + "a palindrome");
+	}
+
+}

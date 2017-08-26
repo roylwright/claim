@@ -1,0 +1,10 @@
+package w1p3_Class_Call;
+
+public class ThisClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

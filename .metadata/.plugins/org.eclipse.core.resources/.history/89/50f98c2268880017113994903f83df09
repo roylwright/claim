@@ -1,0 +1,35 @@
+package w1gp1_ChangeCompact;
+
+import java.util.Scanner;
+
+public class Change {
+	
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("Enter a value between 0 and 100: ");
+		int userInput = scanner.nextInt();
+		scanner.close();
+		
+		change("Quarters: ", 25, userInput);
+		System.out.println("Quarters: " + (userInput/25));
+		userInput = (userInput % 25);
+		change("Dimes: ", 10, userInput);
+		System.out.println("Dimes: " + (userInput/10));
+		userInput = (userInput % 10);
+		change("Nickels: ", 5, userInput);
+		System.out.println("Nickels: " + (userInput/5));
+		userInput = (userInput % 5);
+		change("pennies: ", 1, userInput);
+		System.out.println("Pennies: " + (userInput/1));
+		userInput = (userInput % 1);
+		System.out.println(userInput);
+
+	}
+	public static int change(String word, int value, int userInput) {
+		System.out.println(word + "" + (userInput/value));
+		userInput = (userInput % value);
+		return userInput; 
+	}
+
+}

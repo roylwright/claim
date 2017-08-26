@@ -1,0 +1,19 @@
+package w1a4_Backwards;
+
+public class Backwards {
+
+	public static void main(String[] args) {
+		String userWord = "brag";
+		backwards(userWord);
+
+	}
+
+	private static void backwards(String userWord) {
+		String newWord = "";
+		for (int i = 0; i < userWord.length(); i++) {
+			newWord = newWord + userWord.charAt(userWord.length()-1-i);  //(userWord.length()-i);
+		}
+		System.out.println(newWord);
+	}
+
+}
