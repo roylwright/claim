@@ -10,17 +10,18 @@ public class Input {
 	}
 	public static void inputInt() {
 		Scanner scanner = new Scanner(System.in);
-		System.out.print("Enter a value between 0 and 100: ");
+		System.out.print("Enter an integer: ");
 		int userInt = scanner.nextInt();
-		System.out.println(userInt);
 		//scanner.close();
+		System.out.println(userInt);
+		
 	}
 	public static void inputString() {
 		Scanner scanner = new Scanner(System.in);
 		System.out.print("Enter a string: ");
 		String userWord = scanner.next();
-		System.out.print(userWord);
 		scanner.close();
+		System.out.print(userWord);
 	}
 
 }
